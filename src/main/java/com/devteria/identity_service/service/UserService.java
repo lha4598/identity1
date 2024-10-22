@@ -47,6 +47,7 @@ public class UserService {
         roles.add(Role.USER.name());
 
 //        user.setRoles(roles);
+        userRepository.save(user);
 
         return userMapper.toUserResponse(user);
     }
@@ -78,7 +79,7 @@ public class UserService {
         userRepository.deleteById(userId);
     }
 
-//    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public List<UserResponse> getUsers() {
         log.info("In method get Users");
         return userRepository.findAll().stream().map(userMapper::toUserResponse).toList();
