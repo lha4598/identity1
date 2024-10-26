@@ -5,27 +5,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32f402ba-4513-49a4-8d2c-e5502dab7ec1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/configuration/CustomJwtDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/LogoutRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/RefreshRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/entity/InvalidatedToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/repository/InvalidatedTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/constant/PredefinedRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/devteria/identity_service/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/IdentityServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/IdentityServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/configuration/ApplicationInitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/configuration/ApplicationInitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/configuration/CustomJwtDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/configuration/JwtAuthenticationEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/configuration/JwtAuthenticationEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/configuration/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/controller/PermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/AuthenticationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/IntrospectRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/IntrospectRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/LogoutRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/LogoutRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/PermissionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/PermissionRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/RefreshRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/RefreshRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/RoleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/RoleRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/UserCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/UserCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/UserUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/request/UserUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/AuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/IntrospectResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/IntrospectResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/PermissionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/PermissionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/RoleResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/RoleResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/dto/response/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/entity/InvalidatedToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/entity/InvalidatedToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/entity/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/entity/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/enums/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/exception/AppException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/exception/AppException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/exception/ErrorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/mapper/PermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/mapper/PermissionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/repository/InvalidatedTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/repository/InvalidatedTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/repository/PermissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/repository/PermissionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/service/PermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/service/RoleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/validator/DobConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/validator/DobConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/validator/DobValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devteria/identity_service/validator/DobValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/devteria/identity_service/IdentityServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devteria/identity_service/IdentityServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/configuration/ApplicationInitConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/configuration/ApplicationInitConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/configuration/CustomJwtDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/configuration/CustomJwtDecoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/configuration/JwtAuthenticationEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/configuration/JwtAuthenticationEntry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/configuration/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/configuration/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/controller/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/controller/PermissionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/controller/PermissionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/controller/RoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/ApiResponse$ApiResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/ApiResponse$ApiResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/ApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/ApiResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/UserCreationRequest$UserCreationRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/UserCreationRequest$UserCreationRequestBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/UserCreationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/UserCreationRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/exception/ErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/exception/ErrorCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/UserUpdateRequest$UserUpdateRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/UserUpdateRequest$UserUpdateRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/UserUpdateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/dto/request/UserUpdateRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/InvalidatedToken$InvalidatedTokenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/InvalidatedToken$InvalidatedTokenBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/InvalidatedToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/InvalidatedToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/Permission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/exception/AppException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/exception/AppException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/exception/GlobalExceptionHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/service/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/service/AuthenticationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/service/PermissionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/service/PermissionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/service/RoleService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/validator/DobValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devteria/identity_service/validator/DobValidator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +123,7 @@
   &quot;isMigrated&quot;: true
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -78,7 +136,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JUnit.UserControllerTest.creatUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.creatUser_validRequest_success.executor&quot;: &quot;Run&quot;,
     &quot;Maven.identity-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.identity-service [com.diffplug.spotless:spotless-maven-plugin:2.43.0:apply].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.identity-service [com.diffplug.spotless:spotless-maven-plugin:2.43.0:check].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -106,7 +168,39 @@
       <recent name="com.devteria.identity_service.entity" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.IdentityServiceApplication">
+    <configuration name="UserControllerTest.creatUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="identity-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devteria.identity_service.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devteria.identity_service.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.devteria.identity_service.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="creatUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.creatUser_validRequest_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="identity-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devteria.identity_service.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devteria.identity_service.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.devteria.identity_service.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="creatUser_validRequest_success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IdentityServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="identity-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.devteria.identity_service.IdentityServiceApplication" />
@@ -114,6 +208,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserControllerTest.creatUser_validRequest_success" />
+        <item itemvalue="JUnit.UserControllerTest.creatUser" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -145,7 +245,11 @@
       <workItem from="1729582199766" duration="6341000" />
       <workItem from="1729604667579" duration="1843000" />
       <workItem from="1729606966856" duration="135000" />
-      <workItem from="1729608090905" duration="313000" />
+      <workItem from="1729608090905" duration="1989000" />
+      <workItem from="1729644586181" duration="5942000" />
+      <workItem from="1729777311076" duration="1778000" />
+      <workItem from="1729865513404" duration="3699000" />
+      <workItem from="1729909765310" duration="1399000" />
     </task>
     <servers />
   </component>

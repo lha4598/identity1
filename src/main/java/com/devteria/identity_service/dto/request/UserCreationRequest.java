@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import jakarta.validation.constraints.Size;
 
 import com.devteria.identity_service.validator.DobConstraint;
-
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -15,15 +14,15 @@ import lombok.experimental.FieldDefaults;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class UserCreationRequest {
-    @Size(min = 4, message = "USERNAME_INVALID")
-    String username;
+  @Size(min = 4, message = "USERNAME_INVALID")
+  String username;
 
-    @Size(min = 6, message = "INVALID_PASSWORD")
-    String password;
+  @Size(min = 6, message = "INVALID_PASSWORD")
+  String password;
 
-    String firstName;
-    String lastName;
+  String firstName;
+  String lastName;
 
-    @DobConstraint(min = 18, message = "INVALID_DOB")
-    LocalDate dob;
+  @DobConstraint(min = 18, message = "INVALID_DOB")
+  LocalDate dob;
 }

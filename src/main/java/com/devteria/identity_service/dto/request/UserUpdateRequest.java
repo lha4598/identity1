@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.List;
 
 import com.devteria.identity_service.validator.DobConstraint;
-
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -14,12 +13,12 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class UserUpdateRequest {
-    String password;
-    String firstName;
-    String lastName;
+  String password;
+  String firstName;
+  String lastName;
 
-    @DobConstraint(min = 18, message = "INVALID_DOB")
-    LocalDate dob;
+  @DobConstraint(min = 18, message = "INVALID_DOB")
+  LocalDate dob;
 
-    List<String> roles;
+  List<String> roles;
 }

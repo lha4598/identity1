@@ -1,4 +1,3 @@
-
 package com.devteria.identity_service.entity;
 
 import java.time.LocalDate;
@@ -17,16 +16,15 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    String id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.UUID)
+  String id;
 
-    String username;
-    String password;
-    String firstName;
-    LocalDate dob;
-    String lastName;
+  String username;
+  String password;
+  String firstName;
+  LocalDate dob;
+  String lastName;
 
-    @ManyToMany
-    Set<Role> roles;
+  @ManyToMany Set<Role> roles;
 }

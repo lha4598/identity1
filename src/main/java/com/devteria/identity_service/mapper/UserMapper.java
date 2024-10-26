@@ -11,10 +11,10 @@ import com.devteria.identity_service.entity.User;
 
 @Mapper(componentModel = "spring")
 public interface UserMapper {
-    User toUser(UserCreationRequest request);
+  User toUser(UserCreationRequest request);
 
-    UserResponse toUserResponse(User user);
+  UserResponse toUserResponse(User user);
 
-    @Mapping(target = "roles", ignore = true)
-    void updateUser(@MappingTarget User user, UserUpdateRequest request);
+  @Mapping(target = "roles", ignore = true)
+  void updateUser(@MappingTarget User user, UserUpdateRequest request);
 }
